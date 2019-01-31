@@ -38,9 +38,9 @@ This topic explains how to set up general ledger posting accounts for disposing 
 
 In the Fixed asset posting profiles page, on the Ledger accounts FastTab, select Disposal - sale and Disposal - scrap to set up postings to the ledger.
 
-For both transaction types, the ledger account is credited for the disposal value of the fixed asset. The debit is posted to an offset account, which might be, for example, a bank account. If a fixed asset is sold to a customer, the customer account is used instead of the offset account.
+For both transaction types, the ledger account is credited for the disposal value of the fixed asset. The debit is posted to an offset account, which might be, for example, a bank account. If a fixed asset is sold to a customer, the customer account is used instead of the offset account. Set the Main account to your gain or loss for fixed asset disposals account. 
 
-Click Disposal and then click Sale or Scrap, and then set up detailed accounts to reverse the net book value of the fixed asset. You can also enter information in the Post value and Sales value type fields in the Disposal parameters page. 
+Click Disposal and then click Sale or Scrap, and then set up detailed accounts to reverse the net book value of the fixed asset. You can also enter information in the Post value and Sales value type fields in the Disposal parameters page. The Main account should be the original main account for that transaction type on the posting profile, while the Offset account should be the gain and loss account. For example, when setting up the account for disposal Depreciation, the Main account should be the accumulated depreciation account.  Net book value, as a net amount, can have both the Main account and Offset account set to the gain and loss account.  For the disposal process to work correctly, you must set up disposal accounts for each of your fixed asset transaction types. 
 
 The disposal transaction for an asset in a low-value pool reduces the net book value of the low-value pool by the disposed amount only. However, when the sale of an asset exceeds the net book value of the low-value pool, the net book value is reduced to zero.
 
